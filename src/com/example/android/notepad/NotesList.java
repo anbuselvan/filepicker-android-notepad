@@ -208,7 +208,6 @@ public class NotesList extends ListActivity {
 	        System.out.println(output);
 	        
             Intent create = new Intent(Intent.ACTION_INSERT, getIntent().getData());
-            create.putExtra(Intent.EXTRA_TITLE, data.getExtras().getString("filename"));
             create.putExtra(Intent.EXTRA_TEXT, output);
             startActivity(create);
         }
